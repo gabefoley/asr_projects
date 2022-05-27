@@ -1,0 +1,20 @@
+INSERT INTO projects (project_id, project_name, project_short_info, project_description)
+VALUES (100, 'MBL Project', 'Reconstruction of MBL proteins', 'This is the project Sam is working on for his PhD. It involves searching through the sequence space of...');
+
+INSERT INTO projects (project_id, project_name, project_short_info, project_description)
+VALUES (200, 'CYP2U', 'Reconstruction of cytochrome P450 2U subfamily', 'This was done for the GRASP paper and showed hybrid ancestors' );
+
+
+INSERT INTO papers (paper_id, paper_name, paper_description, paper_status)
+VALUES (100, 'GRASP', 'GRASP method paper', 'Review');
+
+
+INSERT INTO papers (paper_id, paper_name, paper_short_info, paper_description, paper_status)
+VALUES (200, 'Feature prediction of ancestral state', 'Sam''s Honours work', 'Can we predict the experimental features of ancestors given annotations on leaf nodes', 'Planning');
+
+INSERT INTO reconstructions (recon_id, recon_name, recon_short_info, recon_description, recon_files, recon_status, recon_ancestors)
+VALUES (100, 'ALS', 'ALS reconstruction for EnzOnomy project', 'This is a project that takes all of the ALS enzymes and makes 9 ancestors', 'www.google.com', 'Testing ancestors', 9);
+
+INSERT INTO reconstructions (recon_id, recon_name, recon_description, recon_files, recon_status)
+VALUES (200, 'KARI', 'Kari reconstruction for EnzOnomy project', 'www.google.com', 'Making ancestors');
+

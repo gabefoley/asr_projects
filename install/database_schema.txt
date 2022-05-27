@@ -1,0 +1,26 @@
+CREATE TABLE projects (
+	project_id serial PRIMARY KEY,
+	project_name VARCHAR (100) UNIQUE,
+	project_short_info TEXT,
+	project_description TEXT
+	
+);
+
+CREATE TABLE papers (
+	paper_id int PRIMARY KEY,
+	paper_name VARCHAR (100) UNIQUE,
+	paper_short_info TEXT,
+	paper_description TEXT,
+	paper_status VARCHAR(20)
+);
+
+
+CREATE TABLE reconstructions (
+	recon_id int PRIMARY KEY,
+	recon_name VARCHAR (100) UNIQUE,
+	recon_short_info TEXT,
+	recon_description TEXT,
+	recon_files TEXT,
+	recon_status VARCHAR(20),
+	recon_ancestors int
+);
